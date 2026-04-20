@@ -1,111 +1,136 @@
-.niconne-regular {
-  font-family: "Niconne", cursive;
-  font-weight: 400;
+
+
+.bitcount-pixel {
+  font-family: "Bitcount", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 100;
   font-style: normal;
-}
-.oranienbaum-regular {
-  font-family: "Oranienbaum", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.unna-regular {
-  font-family: "Unna", serif;
-  font-weight: 400;
-  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0,
+    "ELSH" 49.7,
+    "ELXP" 0;
 }
 
-.unna-bold {
-  font-family: "Unna", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.unna-regular-italic {
-  font-family: "Unna", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.unna-bold-italic {
-  font-family: "Unna", serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-body{ 
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto auto auto 20%;
-  background-color: #1F1452;
+mainGrid{
     
-}
-h2{
-   color: 
-  #f9dbe1;
-   font-size: 2vw;
-   width: 40%;
-   text-align: center;
-   margin-top: 2px;
-   font-family: Oranienbaum;
-   z-index: 0;
-   position:absolute;
-   
-}
-h1{
-   grid-column-start: 1;
-   grid-column-end: 3;
-    text-decoration: overline;
-    text-decoration-color: #f9dbe1;
-    text-decoration-thickness: 3px;
-    background-color:#35218a;
-    margin-top: 2px;
-    margin-bottom: 3px;
-    font-size: 9vw;
-    width: 50%;
-    color: #FDECEF;
-    z-index: 0;
+    display: grid;
+    grid-template-areas: "nav"
+                        "header"
+                        "personalParagraph"
+                        "game1"
+                        "game1description"
+                        "game2"
+                        "game2description"
+                        "game3"
+                        "game3description";
+    margin-left: 20%;
+    margin-right:20%;
+    color:darkblue;
+    background-color: aliceblue;
+    position: relative;
     text-align: center;
-    border-radius: 50%;
-    
-    font-family: Niconne;
+    font-family: "Bitcount";
 }
-h3{
-    font-family: Oranienbaum;
-    color: #f9dbe1;
-    font-size: 2vw;
-    background-color: #35218a;
-    border-radius: 20%;
-    width: 100%;
-    text-align: center;
+.topnav{
+    grid-area: nav;
     
 }
-#aboutMeBox{
-    grid-column-start: 1;
-    color:#FDECEF;
-    width: 30vw;
-    font-family: Unna;
-    margin-left: 10px;
-    text-align: center;
-    
+
+.topnav a {
+  float: left;
+  color: #836bee;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
-.workingOn{
-  position: absolute;
-  left: 50%;
-    height: 400px;
-    background-color: #d8ad35;
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: darkblue;
+  color: white;
+}
+
+body{
+    background: #EEAECA;
+background: radial-gradient(circle,rgba(238, 174, 202, 1) 46%, rgba(148, 187, 233, 1) 100%);
+}
+#nameHeader{
+    font-size: 7vh;
+    grid-area: header;
+}
+#personalParagraph{
+    grid-area: personalParagraph;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#game1{
+    grid-area: game1;
+    background-color: rgb(48, 159, 52);
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     padding: 10px;
-    border-radius: 10%;
-    margin-top: 10px;
+    border-radius: 30px;
+    
+}
+#game1:hover{
+    background-color: rgb(61, 203, 66);
+}
+
+#game1Paragraph{
+    grid-area: game1description;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+#game2{
+    grid-area: game2;
+    background-color: rgb(146, 50, 64);
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 10px;
+    border-radius: 30px;
     
 }
 
-#FlowerShopText{
-  grid-row-start: 4;
-  grid-column-start: 2;
-  font-family: Unna;
-  color:#FDECEF;
-  font-size: 20px;
+#game2:hover{
+    background-color: rgb(196, 67, 87);
 }
-a{
-  color:#FDECEF;
+
+#game2Paragraph{
+    grid-area: game2description;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#game3{
+    grid-area: game3;
+    background-color: rgb(70, 11, 206);
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 10px;
+    border-radius: 30px;
+    
+}
+
+#game3:hover{
+    background-color: rgb(87, 15, 255);
+}
+
+#game3Paragraph{
+    grid-area: game3description;
+    margin-left: 25%;
+    margin-right: 25%;
 }
