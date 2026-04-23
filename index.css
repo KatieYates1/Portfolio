@@ -17,7 +17,6 @@ mainGrid{
     display: grid;
     grid-template-areas: "nav"
                         "header"
-                        "personalParagraph"
                         "game1"
                         "game1description"
                         "game2"
@@ -32,9 +31,124 @@ mainGrid{
     text-align: center;
     font-family: "Bitcount";
 }
+Game1Grid{
+    
+    display: grid;
+    grid-template-areas: "nav"
+                        "header"
+                        "gamedescription"
+                        "gamePhoto1"
+                        "gamePhoto2"
+                        "gamePhoto3"
+                        "gamePhoto4"
+                        "gamePhoto5"
+                        ;
+    margin-left: 20%;
+    margin-right:20%;
+    color:darkblue;
+    background-color: aliceblue;
+    position: relative;
+    text-align: center;
+    font-family: "Bitcount";
+}
+#Game1heading{
+    grid-area: header;
+}
+#game1Description{
+    grid-area: gamedescription;
+}
+#game1Photo1{
+    grid-area: gamePhoto1;
+    background-color: rgb(48, 159, 52);
+    margin-left: 30%;
+    margin-right:30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 60px;
+}
+#game1Photo2{
+    grid-area: gamePhoto2;
+    background-color: rgb(48, 159, 52);
+    margin-left: 30%;
+    margin-right:30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 60px;
+}
+#game1Photo3{
+    grid-area: gamePhoto3;
+    background-color: rgb(48, 159, 52);
+    margin-left: 30%;
+    margin-right:30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 60px;
+}
+#game1Photo4{
+    grid-area: gamePhoto4;
+    background-color: rgb(48, 159, 52);
+    margin-left: 30%;
+    margin-right:30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 60px;
+}
+#game1Photo5{
+    grid-area: gamePhoto5;
+    background-color: rgb(48, 159, 52);
+    margin-left: 30%;
+    margin-right:30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 60px;
+}
+#game2Photo1{
+    grid-area: gamePhoto1;
+    background-color: rgb(146, 50, 64);
+    margin-left: 30%;
+    margin-right:30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 60px;
+}
+#game2Photo2{
+    grid-area: gamePhoto2;
+    background-color: rgb(146, 50, 64);
+    margin-left: 30%;
+    margin-right:30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 60px;
+}
+#game2Photo3{
+    grid-area: gamePhoto3;
+    background-color: rgb(146, 50, 64);
+    margin-left: 30%;
+    margin-right:30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 60px;
+}
+#game2Photo4{
+    grid-area: gamePhoto4;
+    background-color: rgb(146, 50, 64);
+    margin-left: 30%;
+    margin-right:30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 60px;
+}
 .topnav{
     grid-area: nav;
-    
 }
 
 .topnav a {
