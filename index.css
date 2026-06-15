@@ -17,6 +17,8 @@ mainGrid{
     display: grid;
     grid-template-areas: "nav"
                         "header"
+                        "game0"
+                        "game0description"
                         "game1"
                         "game1description"
                         "game2"
@@ -184,6 +186,26 @@ background: radial-gradient(circle,rgba(238, 174, 202, 1) 46%, rgba(148, 187, 23
     grid-area: personalParagraph;
     margin-left: 10%;
     margin-right: 10%;
+}
+#game0{
+    grid-area: game0;
+    background-color: rgb(100, 21, 143);
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 10px;
+    border-radius: 30px;
+    
+}
+#game0:hover{
+    background-color: rgb(155, 31, 222);
+}
+
+#game0Paragraph{
+    grid-area: game0description;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 #game1{
     grid-area: game1;
