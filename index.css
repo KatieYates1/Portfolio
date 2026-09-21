@@ -33,7 +33,7 @@ mainGrid{
     text-align: center;
     font-family: "Bitcount";
 }
-Game1Grid{
+GameGrid{
     
     display: grid;
     grid-template-areas: "nav"
@@ -53,11 +53,93 @@ Game1Grid{
     text-align: center;
     font-family: "Bitcount";
 }
+contactGrid{
+    
+    display: grid;
+    grid-template-areas: "nav"
+                        "aboutMeTitle"
+                        "personalParagraph"
+                        "connectWithMe"
+                        "linkedinPage"
+                        ;
+    margin-left: 20%;
+    margin-right:20%;
+    color:darkblue;
+    background-color: aliceblue;
+    position: relative;
+    text-align: center;
+    font-family: "Bitcount";
+}
+#contactHeader{
+    grid-area: aboutMeTitle;
+}
+#personalParagraph{
+    grid-area: personalParagraph;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#connectHeader{
+    grid-area: connectWithMe;
+}
+#linkedinLogo{
+    grid-area: linkedinPage;
+}
 #Game1heading{
     grid-area: header;
 }
 #game1Description{
     grid-area: gamedescription;
+}
+
+#game0Photo1{
+    grid-area: gamePhoto1;
+    background-color: #b7688d;
+    margin-left: 30%;
+    margin-right:30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 60px;
+}
+#game0Photo2{
+    grid-area: gamePhoto2;
+    background-color: #b7688d;
+    margin-left: 30%;
+    margin-right:30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 60px;
+}
+#game0Photo3{
+    grid-area: gamePhoto3;
+    background-color: #b7688d;
+    margin-left: 30%;
+    margin-right:30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 60px;
+}
+#game0Photo4{
+    grid-area: gamePhoto4;
+    background-color: #b7688d;
+    margin-left: 30%;
+    margin-right:30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 60px;
+}
+#game0Photo5{
+    grid-area: gamePhoto5;
+    background-color: #b7688d;
+    margin-left: 30%;
+    margin-right:30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 60px;
 }
 #game1Photo1{
     grid-area: gamePhoto1;
@@ -111,13 +193,15 @@ Game1Grid{
 }
 #game2Photo1{
     grid-area: gamePhoto1;
+    width: 50%;
+    margin: 0 auto;
     background-color: rgb(146, 50, 64);
-    margin-left: 30%;
-    margin-right:30%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 8px;
+    padding: 30px;
     border-radius: 60px;
+    iframe{
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 #game2Photo2{
     grid-area: gamePhoto2;
@@ -142,6 +226,56 @@ Game1Grid{
 #game2Photo4{
     grid-area: gamePhoto4;
     background-color: rgb(146, 50, 64);
+    margin-left: 30%;
+    margin-right:30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 60px;
+}
+#game3Photo1{
+    grid-area: gamePhoto1;
+    background-color: rgb(70, 11, 206);
+    margin-left: 30%;
+    margin-right:30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 60px;
+}
+#game3Photo2{
+    grid-area: gamePhoto2;
+    background-color: rgb(70, 11, 206);
+    margin-left: 30%;
+    margin-right:30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 60px;
+}
+#game3Photo3{
+    grid-area: gamePhoto3;
+    background-color: rgb(70, 11, 206);
+    margin-left: 30%;
+    margin-right:30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 60px;
+}
+#game3Photo4{
+    grid-area: gamePhoto4;
+    background-color: rgb(70, 11, 206);
+    margin-left: 30%;
+    margin-right:30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 60px;
+}
+#game3Photo5{
+    grid-area: gamePhoto5;
+    background-color: rgb(70, 11, 206);
     margin-left: 30%;
     margin-right:30%;
     margin-top: 10px;
@@ -181,11 +315,6 @@ background: radial-gradient(circle,rgba(238, 174, 202, 1) 46%, rgba(148, 187, 23
 #nameHeader{
     font-size: 7vh;
     grid-area: header;
-}
-#personalParagraph{
-    grid-area: personalParagraph;
-    margin-left: 10%;
-    margin-right: 10%;
 }
 #game0{
     grid-area: game0;
